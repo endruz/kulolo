@@ -11,6 +11,7 @@
 - [操作系统](./操作系统/README.md)
   - [Linux](./操作系统/Linux/README.md)
 - [开发工具](./开发工具/README.md)
+  - [Git](./开发工具/Git/README.md)
   - [VSCode](./开发工具/VSCode/README.md)
   - [WSL](./开发工具/WSL/README.md)
 - [容器](./容器/README.md)
