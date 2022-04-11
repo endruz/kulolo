@@ -2,5 +2,5 @@
 
 ---
 
-- [vscode](./vscode/README.md)
+- [VSCode](./VSCode/README.md)
 - [WSL](./WSL/README.md)
