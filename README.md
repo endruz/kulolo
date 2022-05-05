@@ -20,6 +20,7 @@
 - [中间件](./中间件/README.md)
   - [Nginx](中间件/Nginx/README.md)
 - [数学](./数学/README.md)
+  - [基础](./数学/基础/README.md)
   - [线性代数](./数学/线性代数/README.md)
 - [深度学习](./深度学习/README.md)
   - [吴恩达《深度学习》课程笔记](./深度学习/吴恩达《深度学习》课程笔记/README.md)
