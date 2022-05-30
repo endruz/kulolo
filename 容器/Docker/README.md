@@ -10,3 +10,4 @@
 - [6. Dockerfile](./6.Dockerfile.md)
 - [7. Docker 网络](./7.Docker网络.md)
 - [8. Docker 嵌套](./8.Docker嵌套.md)
+- [9. nvidia-docker 安装](./9.nvidia-docker安装.md)
