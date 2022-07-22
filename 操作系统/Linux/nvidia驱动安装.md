@@ -2,6 +2,7 @@
 
 - [nvidia 驱动安装](#nvidia-驱动安装)
   - [卸载旧版本](#卸载旧版本)
+  - [禁用 Nouveau](#禁用-nouveau)
   - [在线安装](#在线安装)
   - [离线安装](#离线安装)
   - [验证](#验证)
@@ -10,10 +11,28 @@
 
 ```bash
 # 清理旧驱动
-sudo apt-get purge nvidia-<VERSION>
+sudo apt-get purge *nvidia*
 sudo apt-get autoremove
 # 若存在原有离线安装包则可执行以下命令
 sudo sh NVIDIA-Linux-x86_64-xxx.xx.xx.run --uninstall
+```
+
+## 禁用 Nouveau
+
+```bash
+# 禁用系统自带显卡驱动，Nvidia 系列显卡通常对应 Nouveau (开源驱动)
+# 查看是否存在驱动。如有返回信息，则存在驱动。
+lsmod | grep nouveau
+
+# 编辑文件，末尾添加：
+# blacklist nouveau
+# options nouveau modeset=0
+sudo vim /etc/modprobe.d/blacklist.conf
+
+# 重启服务器
+sudo reboot
+# 确认驱动是否还存在。没有返回信息，则说明成功。
+lsmod | grep nouveau
 ```
 
 ## 在线安装
@@ -54,20 +73,6 @@ lspci | grep -i nvidia
 将下载的驱动离线包上传到离线服务器执行以下命令安装：
 
 ```bash
-# 禁用系统自带显卡驱动，Nvidia 系列显卡通常对应 Nouveau (开源驱动)
-# 查看是否存在驱动。如有返回信息，则存在驱动。
-lsmod | grep nouveau
-
-# 编辑文件，末尾添加：
-# blacklist nouveau
-# options nouveau modeset=0
-sudo vim /etc/modprobe.d/blacklist.conf
-
-# 重启服务器
-sudo reboot
-# 确认驱动是否还存在。没有返回信息，则说明成功。
-lsmod | grep nouveau
-
 # 离线包添加执行权限
 sudo chmod a+x NVIDIA-Linux-x86_64-xxx.xx.xx.run
 
@@ -100,7 +105,7 @@ reboot
 
 4. Would you like to run the nvidia-xconfigutility to automatically update your x configuration so that the NVIDIA x driver will be used when you restart x? Any pre-existing x confile will be backed up.
 
-    选择 no 继续
+    选择 No 继续
 
 ## 验证
 
