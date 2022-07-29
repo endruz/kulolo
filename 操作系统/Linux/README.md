@@ -7,3 +7,4 @@
 - [修复 Ubuntu 丢失的 GPG 密钥](./修复Ubuntu丢失的GPG密钥.md)
 - [nvidia-smi 报错](./nvidia-smi报错.md)
 - [nvidia 驱动安装](./nvidia驱动安装.md)
+- [使用 Windows 远程桌面连接 Ubuntu](./使用Windows远程桌面连接Ubuntu.md)
