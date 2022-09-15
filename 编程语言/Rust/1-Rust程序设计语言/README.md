@@ -19,3 +19,4 @@
 - [13. Rust 中的函数式语言功能：迭代器与闭包](./13.Rust%20中的函数式语言功能：迭代器与闭包/README.md)
 - [14. 进一步认识 Cargo 和 Crates.io](./14.进一步认识%20Cargo%20和%20Crates.io/README.md)
 - [15. 智能指针](./15.智能指针/README.md)
+- [16. 无畏并发](./16.无畏并发/README.md)
