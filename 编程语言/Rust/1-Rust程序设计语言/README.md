@@ -20,3 +20,4 @@
 - [14. 进一步认识 Cargo 和 Crates.io](./14.进一步认识%20Cargo%20和%20Crates.io/README.md)
 - [15. 智能指针](./15.智能指针/README.md)
 - [16. 无畏并发](./16.无畏并发/README.md)
+- [17. Rust 的面向对象特性](./17.Rust%20的面向对象特性/README.md)
