@@ -8,3 +8,4 @@
 - [nvidia-smi 报错](./nvidia-smi报错.md)
 - [nvidia 驱动安装](./nvidia驱动安装.md)
 - [使用 Windows 远程桌面连接 Ubuntu](./使用Windows远程桌面连接Ubuntu.md)
+- [容器内存占用排查](./容器内存占用排查.md)
