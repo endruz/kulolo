@@ -6,6 +6,7 @@
     - [Check SDK version](#check-sdk-version)
     - [Check runtime version](#check-runtime-version)
     - [Detailed information](#detailed-information)
+    - [Specify .NET SDK version](#specify-net-sdk-version)
   - [What is .Net](#what-is-net)
     - [Binary distributions](#binary-distributions)
     - [Programming Languages](#programming-languages)
@@ -22,48 +23,85 @@ Reference the [document](https://learn.microsoft.com/en-us/dotnet/core/install/)
 
 ### Check SDK version
 
-```bash
-$ dotnet --list-sdks
-7.0.200 [/usr/share/dotnet/sdk]
+```powershell
+> dotnet --list-sdks
+5.0.403 [C:\Program Files\dotnet\sdk]
+6.0.310 [C:\Program Files\dotnet\sdk]
+7.0.202 [C:\Program Files\dotnet\sdk]
 ```
 
 ### Check runtime version
 
-```bash
-$ dotnet --list-runtimes
-Microsoft.AspNetCore.App 7.0.3 [/usr/share/dotnet/shared/Microsoft.AspNetCore.App]
-Microsoft.NETCore.App 7.0.3 [/usr/share/dotnet/shared/Microsoft.NETCore.App]
+```powershell
+> dotnet --list-runtimes
+Microsoft.AspNetCore.App 3.1.21 [C:\Program Files\dotnet\shared\Microsoft.AspNetCore.App]
+Microsoft.AspNetCore.App 3.1.32 [C:\Program Files\dotnet\shared\Microsoft.AspNetCore.App]
+Microsoft.AspNetCore.App 5.0.12 [C:\Program Files\dotnet\shared\Microsoft.AspNetCore.App]
+Microsoft.AspNetCore.App 5.0.17 [C:\Program Files\dotnet\shared\Microsoft.AspNetCore.App]
+Microsoft.AspNetCore.App 6.0.15 [C:\Program Files\dotnet\shared\Microsoft.AspNetCore.App]
+Microsoft.AspNetCore.App 7.0.4 [C:\Program Files\dotnet\shared\Microsoft.AspNetCore.App]
+Microsoft.NETCore.App 3.1.21 [C:\Program Files\dotnet\shared\Microsoft.NETCore.App]
+Microsoft.NETCore.App 3.1.32 [C:\Program Files\dotnet\shared\Microsoft.NETCore.App]
+Microsoft.NETCore.App 5.0.12 [C:\Program Files\dotnet\shared\Microsoft.NETCore.App]
+Microsoft.NETCore.App 5.0.17 [C:\Program Files\dotnet\shared\Microsoft.NETCore.App]
+Microsoft.NETCore.App 6.0.15 [C:\Program Files\dotnet\shared\Microsoft.NETCore.App]
+Microsoft.NETCore.App 7.0.4 [C:\Program Files\dotnet\shared\Microsoft.NETCore.App]
+Microsoft.WindowsDesktop.App 3.1.21 [C:\Program Files\dotnet\shared\Microsoft.WindowsDesktop.App]
+Microsoft.WindowsDesktop.App 3.1.32 [C:\Program Files\dotnet\shared\Microsoft.WindowsDesktop.App]
+Microsoft.WindowsDesktop.App 5.0.12 [C:\Program Files\dotnet\shared\Microsoft.WindowsDesktop.App]
+Microsoft.WindowsDesktop.App 5.0.17 [C:\Program Files\dotnet\shared\Microsoft.WindowsDesktop.App]
+Microsoft.WindowsDesktop.App 6.0.15 [C:\Program Files\dotnet\shared\Microsoft.WindowsDesktop.App]
+Microsoft.WindowsDesktop.App 7.0.4 [C:\Program Files\dotnet\shared\Microsoft.WindowsDesktop.App]
 ```
 
 ### Detailed information
 
-```bash
-$ dotnet --info
+```powershell
+> dotnet --info
 .NET SDK:
- Version:   7.0.200
- Commit:    534117727b
+ Version:   7.0.202
+ Commit:    6c74320bc3
 
 Runtime Environment:
- OS Name:     ubuntu
- OS Version:  20.04
- OS Platform: Linux
- RID:         ubuntu.20.04-x64
- Base Path:   /usr/share/dotnet/sdk/7.0.200/
+ OS Name:     Windows
+ OS Version:  10.0.22621
+ OS Platform: Windows
+ RID:         win10-x64
+ Base Path:   C:\Program Files\dotnet\sdk\7.0.202\
 
 Host:
-  Version:      7.0.3
+  Version:      7.0.4
   Architecture: x64
-  Commit:       0a2bda10e8
+  Commit:       0a396acafe
 
 .NET SDKs installed:
-  7.0.200 [/usr/share/dotnet/sdk]
+  5.0.403 [C:\Program Files\dotnet\sdk]
+  6.0.310 [C:\Program Files\dotnet\sdk]
+  7.0.202 [C:\Program Files\dotnet\sdk]
 
 .NET runtimes installed:
-  Microsoft.AspNetCore.App 7.0.3 [/usr/share/dotnet/shared/Microsoft.AspNetCore.App]
-  Microsoft.NETCore.App 7.0.3 [/usr/share/dotnet/shared/Microsoft.NETCore.App]
+  Microsoft.AspNetCore.App 3.1.21 [C:\Program Files\dotnet\shared\Microsoft.AspNetCore.App]
+  Microsoft.AspNetCore.App 3.1.32 [C:\Program Files\dotnet\shared\Microsoft.AspNetCore.App]
+  Microsoft.AspNetCore.App 5.0.12 [C:\Program Files\dotnet\shared\Microsoft.AspNetCore.App]
+  Microsoft.AspNetCore.App 5.0.17 [C:\Program Files\dotnet\shared\Microsoft.AspNetCore.App]
+  Microsoft.AspNetCore.App 6.0.15 [C:\Program Files\dotnet\shared\Microsoft.AspNetCore.App]
+  Microsoft.AspNetCore.App 7.0.4 [C:\Program Files\dotnet\shared\Microsoft.AspNetCore.App]
+  Microsoft.NETCore.App 3.1.21 [C:\Program Files\dotnet\shared\Microsoft.NETCore.App]
+  Microsoft.NETCore.App 3.1.32 [C:\Program Files\dotnet\shared\Microsoft.NETCore.App]
+  Microsoft.NETCore.App 5.0.12 [C:\Program Files\dotnet\shared\Microsoft.NETCore.App]
+  Microsoft.NETCore.App 5.0.17 [C:\Program Files\dotnet\shared\Microsoft.NETCore.App]
+  Microsoft.NETCore.App 6.0.15 [C:\Program Files\dotnet\shared\Microsoft.NETCore.App]
+  Microsoft.NETCore.App 7.0.4 [C:\Program Files\dotnet\shared\Microsoft.NETCore.App]
+  Microsoft.WindowsDesktop.App 3.1.21 [C:\Program Files\dotnet\shared\Microsoft.WindowsDesktop.App]
+  Microsoft.WindowsDesktop.App 3.1.32 [C:\Program Files\dotnet\shared\Microsoft.WindowsDesktop.App]
+  Microsoft.WindowsDesktop.App 5.0.12 [C:\Program Files\dotnet\shared\Microsoft.WindowsDesktop.App]
+  Microsoft.WindowsDesktop.App 5.0.17 [C:\Program Files\dotnet\shared\Microsoft.WindowsDesktop.App]
+  Microsoft.WindowsDesktop.App 6.0.15 [C:\Program Files\dotnet\shared\Microsoft.WindowsDesktop.App]
+  Microsoft.WindowsDesktop.App 7.0.4 [C:\Program Files\dotnet\shared\Microsoft.WindowsDesktop.App]
 
 Other architectures found:
-  None
+  x86   [C:\Program Files (x86)\dotnet]
+    registered at [HKLM\SOFTWARE\dotnet\Setup\InstalledVersions\x86\InstallLocation]
 
 Environment variables:
   Not set
@@ -77,6 +115,32 @@ Learn more:
 Download .NET:
   https://aka.ms/dotnet/download
 ```
+
+### Specify .NET SDK version
+
+Check the version of the .NET SDK used by dotnet commands.
+
+```powershell
+> dotnet --version
+7.0.202
+```
+
+We can use `global.json` to specify .NET SDK version. If `global.json` is not available, the latest version is used by default.
+
+The .NET SDK looks for a `global.json` file in the current working directory (which isn't necessarily the same as the project directory) or one of its parent directories.
+
+For example, the following global.json file selects 6.0.300 or any later feature band or patch for 6.0 that is installed on the machine:
+
+```json
+{
+  "sdk": {
+    "version": "6.0.300",
+    "rollForward": "latestFeature"
+  }
+}
+```
+
+Some detailed configuration can be seen in [here](https://learn.microsoft.com/en-us/dotnet/core/tools/global-json).
 
 ## What is .Net
 
