@@ -222,7 +222,6 @@ Project file `hello-world.csproj`:
 Source code `Program.cs`:
 
 ```C#
-// See https://aka.ms/new-console-template for more information
 Console.WriteLine("Hello, World!");
 ```
 
