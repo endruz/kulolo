@@ -27,8 +27,10 @@ dotnet new console -n App
 dotnet new gitignore
 # Create global.json
 dotnet new globaljson --sdk-version 6.0.310
+# Create a manifest file(.config/dotnet-tools.json)
+dotnet new tool-manifest
 # List all templates which you can create
-dotnet new list
+dotnet new --list
 ```
 
 In .Net, a solution can contains one or many projects.
